@@ -1,27 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading1 = React.createElement(
-    "h1",
-    {
-      id: "heading1",
-      className: "heading1",
-    },
-    "Hello World1"
+
+
+const heading1 = ()=>(
+  <h1 id="heading1" className="heading1">
+    Hello World1
+  </h1>
+)
+const HeaderComponent = () => {
+  return (
+    <div>
+      <h1>Header Component</h1>
+      {heading1()}
+    </div>
   );
-  const heading2 = React.createElement(
-    "h2",
-    {
-      id: "heading2",
-      className: "heading2",
-    },
-    "Hello World2"
-  );
-  const container = React.createElement("div", { id: "container" }, [heading1, heading2]);
-  const root = ReactDOM.createRoot(document.getElementById("root"));
-  
-  // passing a react element to the root using render method
-  root.render(container);
-  
-  
-  
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// passing a react element to the root using render method
+root.render(<HeaderComponent/>);
+
+

@@ -1,3 +1,22 @@
+/** 
+ * function of parcel bundler
+ * Create a server
+ * HMR - Hot Module Replacement - It will automatically reload the page when we make changes in the code
+ * File Watcher - It will watch the file and reload the page when we make changes in the code
+ * Bundling - It will bundle all the files in a single file
+ * Minification - It will minify the code
+ * Tree Shaking - It will remove the unused code
+ * Cleaning our code
+ * Babel - It will convert our code to ES5
+ * Dev and Production build
+ * Super fast build algorithm
+ * Image Optimization
+ * Caching while development
+ * Compressing the code
+ * Consistent build time
+ * */
+
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 
